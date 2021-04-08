@@ -20,6 +20,8 @@
 
 #if defined(ATMOSPHERE_BOARD_NINTENDO_NX)
     #include <mesosphere/board/nintendo/nx/kern_k_memory_layout.hpp>
+#elif defined(ATMOSPHERE_BOARD_RASPBERRY_PI4)
+    #include <mesosphere/board/raspberry/pi4/kern_k_memory_layout.hpp>
 #else
     #error "Unknown board for KMemoryLayout"
 #endif
