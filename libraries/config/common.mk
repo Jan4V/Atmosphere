@@ -49,6 +49,23 @@ export ATMOSPHERE_BOARD_NAME := nintendo_nx
 export ATMOSPHERE_OS_NAME    := horizon
 
 export ATMOSPHERE_CPU_EXTENSIONS :=
+
+endif
+
+else ifeq ($(ATMOSPHERE_BOARD),raspberry-pi4)
+
+export ATMOSPHERE_ARCH_DIR   := arm64
+export ATMOSPHERE_BOARD_DIR  := raspberry/pi4
+export ATMOSPHERE_OS_DIR     := horizon
+
+export ATMOSPHERE_ARCH_NAME  := arm64
+export ATMOSPHERE_BOARD_NAME := raspberry_pi4
+export ATMOSPHERE_OS_NAME    := horizon
+
+export ATMOSPHERE_CPU_EXTENSIONS := arm_crypto_extension aarch64_crypto_extension
+
+ifeq ($(strip $(ATMOSPHERE_CPU)),)
+export ATMOSPHERE_CPU            := arm-cortex-a57
 endif
 
 endif
