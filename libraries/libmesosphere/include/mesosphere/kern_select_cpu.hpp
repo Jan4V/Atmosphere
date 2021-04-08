@@ -29,13 +29,23 @@
     #error "Unknown architecture for CPU"
 #endif
 
-#ifdef ATMOSPHERE_BOARD_NINTENDO_NX
+#if defined(ATMOSPHERE_BOARD_NINTENDO_NX)
 
     #include <mesosphere/board/nintendo/nx/kern_cpu_map.hpp>
 
     namespace ams::kern::cpu {
 
         using namespace ams::kern::board::nintendo::nx::impl::cpu;
+
+    }
+
+#elif defined(ATMOSPHERE_BOARD_RASPBERRY_PI4)
+
+    #include <mesosphere/board/raspberry/pi4/kern_cpu_map.hpp>
+
+    namespace ams::kern::cpu {
+
+        using namespace ams::kern::board::raspberry::pi4::impl::cpu;
 
     }
 

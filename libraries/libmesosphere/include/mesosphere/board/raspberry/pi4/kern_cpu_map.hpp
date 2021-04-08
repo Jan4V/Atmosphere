@@ -13,26 +13,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 #pragma once
-#include <vapours/svc/svc_common.hpp>
+#include <mesosphere/kern_common.hpp>
 
-#if defined(ATMOSPHERE_BOARD_NINTENDO_NX)
+namespace ams::kern::board::raspberry::pi4::impl::cpu {
 
-    #include <vapours/svc/board/nintendo/nx/svc_hardware_constants.hpp>
-    namespace ams::svc {
-        using namespace ams::svc::board::nintendo::nx;
-    }
-    
-#elif defined(ATMOSPHERE_BOARD_RASPBERRY_PI4)
+    /* Virtual to Physical core map. */
+    constexpr inline const s32 VirtualToPhysicalCoreMap[BITSIZEOF(u64)] = {
+        0, 1, 2, 3, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 3,
+    };
 
-    #include <vapours/svc/board/raspberry/pi4/svc_hardware_constants.hpp>
-    namespace ams::svc {
-        using namespace ams::svc::board::raspberry::pi4;
-    }
-
-#else
-
-    #error "Unknown board for svc::DeviceName"
-
-#endif
+}
