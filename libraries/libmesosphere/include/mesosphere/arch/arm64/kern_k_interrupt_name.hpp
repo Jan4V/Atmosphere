@@ -36,6 +36,13 @@ namespace ams::kern::arch::arm64 {
             KInterruptName_SecurePhysicalTimer    = 29,
             KInterruptName_NonSecurePhysicalTimer = 30,
             KInterruptName_LegacyNIrq             = 31,
+    #elif defined(ATMOSPHERE_BOARD_RASPBERRY_PI4)    
+            KInterruptName_HypervisorTimer        = 26,
+            KInterruptName_VirtualTimer           = 27,
+            KInterruptName_LegacyNFiq             = 28,
+            KInterruptName_SecurePhysicalTimer    = 29,
+            KInterruptName_NonSecurePhysicalTimer = 30,
+            KInterruptName_LegacyNIrq             = 31,
     #endif
 
     #if defined(ATMOSPHERE_BOARD_NINTENDO_NX)
