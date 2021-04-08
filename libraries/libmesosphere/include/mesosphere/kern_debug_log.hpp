@@ -39,7 +39,9 @@ namespace ams::kern {
 
 #ifndef MESOSPHERE_DEBUG_LOG_SELECTED
 
-    #ifdef ATMOSPHERE_BOARD_NINTENDO_NX
+    #if defined(ATMOSPHERE_BOARD_NINTENDO_NX)
+        #define MESOSPHERE_DEBUG_LOG_USE_UART
+    #elif defined(ATMOSPHERE_BOARD_RASPBERRY_PI4)
         #define MESOSPHERE_DEBUG_LOG_USE_UART
     #else
         #error "Unknown board for Default Debug Log Source"
