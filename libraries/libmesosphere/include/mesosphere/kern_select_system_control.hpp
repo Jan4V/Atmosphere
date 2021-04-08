@@ -16,11 +16,18 @@
 #pragma once
 #include <mesosphere/kern_common.hpp>
 
-#ifdef ATMOSPHERE_BOARD_NINTENDO_NX
+#if defined(ATMOSPHERE_BOARD_NINTENDO_NX)
     #include <mesosphere/board/nintendo/nx/kern_k_system_control.hpp>
 
     namespace ams::kern {
         using ams::kern::board::nintendo::nx::KSystemControl;
+    }
+
+#elif defined(ATMOSPHERE_BOARD_RASPBERRY_PI4)
+    #include <mesosphere/board/raspberry/pi4/kern_k_system_control.hpp>
+
+    namespace ams::kern {
+        using ams::kern::board::raspberry::pi4::KSystemControl;
     }
 
 #else
