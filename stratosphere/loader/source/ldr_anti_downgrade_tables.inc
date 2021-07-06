@@ -397,3 +397,76 @@ constexpr MinimumProgramVersion g_MinimumProgramVersions1100[] = {
     {ncm::WebAppletId::WifiWebAuth,   MakeSystemVersion(11, 0, 0)},
 };
 constexpr size_t g_MinimumProgramVersionsCount1100 = util::size(g_MinimumProgramVersions1100);
+
+constexpr MinimumProgramVersion g_MinimumProgramVersions1210[] = {
+    /* All non-Development System Modules. */
+    {ncm::SystemProgramId::Usb,         MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Tma,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Boot2,       MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Settings,    MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Bus,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Bluetooth,   MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Bcat,        MakeSystemVersion(12, 0, 0)},
+ /* {ncm::SystemProgramId::Dmnt,        MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::Friends,     MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Nifm,        MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Ptm,         MakeSystemVersion(12, 0, 0)},
+ /* {ncm::SystemProgramId::Shell,       MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::BsdSockets,  MakeSystemVersion(12, 0, 1)},
+    {ncm::SystemProgramId::Hid,         MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Audio,       MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::LogManager,  MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Wlan,        MakeSystemVersion(12, 0, 0)},
+ /* {ncm::SystemProgramId::Cs,          MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::Ldn,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::NvServices,  MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Pcv,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Ppc,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::NvnFlinger,  MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Pcie,        MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Account,     MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Ns,          MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Nfc,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Psc,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::CapSrv,      MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Am,          MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Ssl,         MakeSystemVersion(12, 0, 3)},
+    {ncm::SystemProgramId::Nim,         MakeSystemVersion(12, 1, 0)},
+ /* {ncm::SystemProgramId::Cec,         MakeSystemVersion(12, 1, 0)}, */
+ /* {ncm::SystemProgramId::Tspm,        MakeSystemVersion(12, 1, 0)}, */
+ /* {ncm::SystemProgramId::Spl,         MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::Lbl,         MakeSystemVersion(10, 0, 0)},
+    {ncm::SystemProgramId::Btm,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Erpt,        MakeSystemVersion(12, 1, 0)},
+ /* {ncm::SystemProgramId::Time,        MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::Vi,          MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Pctl,        MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Npns,        MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Eupld,       MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Glue,        MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Eclct,       MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Es,          MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Fatal,       MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Grc,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Creport,     MakeSystemVersion(12, 1, 0)},
+    {ncm::SystemProgramId::Ro,          MakeSystemVersion(12, 0, 0)},
+ /* {ncm::SystemProgramId::Profiler,    MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::Sdb,         MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Migration,   MakeSystemVersion(12, 0, 0)},
+ /* {ncm::SystemProgramId::Jit,         MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::JpegDec,     MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::SafeMode,    MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Olsc,        MakeSystemVersion(12, 0, 0)},
+ /* {ncm::SystemProgramId::Dt,          MakeSystemVersion(12, 1, 0)}, */
+ /* {ncm::SystemProgramId::Nd,          MakeSystemVersion(12, 1, 0)}, */
+    {ncm::SystemProgramId::Ngct,        MakeSystemVersion(12, 0, 0)},
+    {ncm::SystemProgramId::Pgl,         MakeSystemVersion(12, 0, 2)}, /* Nintendo has this for whatever reason */
+
+    /* All Web Applets. */
+    {ncm::WebAppletId::Web,           MakeSystemVersion(12, 1, 0)},
+    {ncm::WebAppletId::Shop,          MakeSystemVersion(12, 1, 0)},
+    {ncm::WebAppletId::OfflineWeb,    MakeSystemVersion(12, 1, 0)},
+    {ncm::WebAppletId::LoginShare,    MakeSystemVersion(12, 1, 0)},
+    {ncm::WebAppletId::WifiWebAuth,   MakeSystemVersion(12, 1, 0)},
+};
+constexpr size_t g_MinimumProgramVersionsCount1210 = util::size(g_MinimumProgramVersions1210);
