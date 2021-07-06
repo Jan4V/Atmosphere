@@ -41,4 +41,5 @@ constexpr inline const EmbeddedPatch Usb30ForceEnablePatches[] = {
     { ParseModuleId("B9C700CA8335F8BAA0D2041D8D09F772890BA988"), util::size(Usb30ForceEnablePatches_10_0_0), Usb30ForceEnablePatches_10_0_0 },
     { ParseModuleId("95BAF06A69650C215A5DD50CF8BD2A603E7AD3C2"), util::size(Usb30ForceEnablePatches_11_0_0), Usb30ForceEnablePatches_11_0_0 },
     { ParseModuleId("F3F88D90EF6B3B6358EDEBAF87D56FA88D3A081C"), util::size(Usb30ForceEnablePatches_12_0_0), Usb30ForceEnablePatches_12_0_0 },
+    { ParseModuleId("A109046278AA99353C20EC38B57C495B74A06D91"), util::size(Usb30ForceEnablePatches_12_0_0), Usb30ForceEnablePatches_12_0_0 }, // 12.1.0 updated usb, however the patches are still valid
 };
